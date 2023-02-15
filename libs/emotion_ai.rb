@@ -37,6 +37,6 @@ class EmotionAI
     form.send_keys(sentence)
     form.submit
 
-    @status = :result
+    @status = :result if @session.current_url != 'https://emotion-ai.userlocal.jp/'
   end
 end
