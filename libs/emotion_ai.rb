@@ -10,6 +10,10 @@ class EmotionAI
     # status: initial, open, result
   end
 
+  def angry?(sentence)
+    result(sentence) == '怒りの感情が強い文章です'
+  end
+
   def result(sentence)
     open
     submit(sentence)
